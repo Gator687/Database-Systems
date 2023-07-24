@@ -167,4 +167,8 @@ Select CustomerNum, CustomerName From Customer
 
 Select * From Part
 
-Select Class, Description, OnHand, Price From Part Order by Description
+Select Class, Description, OnHand, Price From Part Order by Class, Description
+
+Select Class, Description, OnHand, Price From Part Where Price > 400 Order by Price
+
+Select CustomerName, CustomerNum, RepNum, CreditLimit From Customer Where RepNum = 35 or CreditLimit = 10000
