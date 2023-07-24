@@ -172,3 +172,13 @@ Select Class, Description, OnHand, Price From Part Order by Class, Description
 Select Class, Description, OnHand, Price From Part Where Price > 400 Order by Price
 
 Select CustomerName, CustomerNum, RepNum, CreditLimit From Customer Where RepNum = 35 or CreditLimit = 10000
+
+Select CustomerName, CustomerNum From Customer Where RepNum = 35 and CreditLimit = 10000
+
+Select CustomerName, CustomerNum, Balance From Customer c Inner Join Rep r On c.RepNum = r.RepNum Where r.FirstName = 'Juan' AND r.LastName = 'Perez' Order by c.Balance
+
+Select * From Orders Where OrderDate = '2007-10-20'
+
+Select * From Part Where Price BETWEEN 129.95 AND 500 Order by Price Desc
+
+Select * From Part Where Class <> 'SG';
