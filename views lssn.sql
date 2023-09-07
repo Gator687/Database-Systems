@@ -8,7 +8,7 @@
 --first get the SQL query to work
 
 --simple view to hide data
-drop view titlePaper
+drop view henry.titlePaper
 
 create view henry.titlePaper as
 select title, type, paperback
@@ -21,7 +21,7 @@ go; -- need if you get error 'Must be the only statement in the batch'
 create view henry.bookPub as
 select title, publishername, BookCode	--include a PK for joining later
 from henry.book b join henry.publisher p
-on b.publisherID = p.pubkisherCode
+on b.publisherID = p.publisherCode
 
 select * from henry.bookPub
 where title like '[AEIOUY]%'

@@ -13,13 +13,10 @@ alter schema premiere
 	transfer dbo.orders;
 
 alter schema premiere
-	transfer dbo.repo;
-
-alter schema premiere
 	transfer dbo.part;
 
 alter schema premiere
-	transfer dbo.Rep;
+	transfer dbo.Repo;
 
 alter schema henry
 	transfer dbo.author;
