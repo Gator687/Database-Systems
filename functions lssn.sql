@@ -49,3 +49,15 @@ END
 
 go
 select henry.custOffer(100, 'FAIR') as custOffer
+
+go
+create or alter function henry.bookStatsFun()
+returns table as
+return(
+select b.bookcode, b.title, onHand, avgPrice, maxPrice, minPrice
+from henry.book b join(
+    select bookcode, count(*) as onHand, avg(price) as avgPrice,
+        max(price) as maxPrice, min(price) as minPrice from henry.copy
+        group by bookcode) as bookStats
+    on b.bookcode = bookStats.bookcode
+)
