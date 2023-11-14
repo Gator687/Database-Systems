@@ -125,8 +125,8 @@ public class HenryDropPracticeForm extends javax.swing.JFrame {
     
     
     public static void main(String[] args){
-        initComponents();
-        connectDatabase();
+        //initComponents();
+        //connectDatabase();
         /*try{
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getIn){
                 if("Nimbus".equals(info.getName())){
