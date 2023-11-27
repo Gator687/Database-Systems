@@ -50,14 +50,16 @@
                   </Group>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="OnHandSpinner" min="-2" max="-2" attributes="0"/>
                       <Component id="WarehouseCombo" min="-2" max="-2" attributes="0"/>
-                      <Component id="ClassCombo" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="PartNumBox" max="32767" attributes="0"/>
                           <Component id="DescriptionBox" pref="304" max="32767" attributes="0"/>
                       </Group>
                       <Component id="PriceBox" alignment="0" min="-2" pref="101" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="OnHandSpinner" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ClassCombo" alignment="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace pref="46" max="32767" attributes="0"/>
               </Group>
