@@ -100,6 +100,7 @@ insert into labOrderedFood (foodID, ticketID, food) values ('f019', 'T009', 'chi
 
 insert into labOrderedFood (foodID, ticketID, food) values ('f020', 'T010', 'hotdog');
 
+select name from labCustomer where name = 'Perl';
 select * from labCustomer
 select * from labfood
 select * from labTicket
